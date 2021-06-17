@@ -1,0 +1,27 @@
+.container-fluid {
+  @media (min-width:$tablet) {
+    padding:5rem 0rem 1rem 0rem ;
+  }
+  padding: 1rem 0.5rem;
+  height: 100%;
+}
+.section {
+  overflow-y: auto;
+}
+body, html {
+  min-height: 100vh;
+  height: 100%;
+}
+.card{
+  @media (min-width: 768px) {
+    max-width: 768px;
+    width: 100%;
+    margin: auto;
+  }
+}
+header{
+  width: 100%;
+  @media (min-width:$tablet) {
+    max-width: 768px;
+  }
+}

@@ -1,0 +1,44 @@
+
+
+// If it was a bigger project, there would be style seperation with files (file for buttons, file for PopUps etc.)
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  & > * {
+    flex: 1 1 100%;
+  }
+}
+.alert{
+  padding: 0.2rem 1rem!important;
+}
+.motivation-color{
+  color: $motivationText;
+}
+label{
+  margin-bottom: 0;
+}
+
+
+
+
+/* ↓↓↓↓↓↓↓ Add task PopUp ↓↓↓↓↓↓↓ */
+.model_bg{
+  display: none;
+  background: $transparentLight ;
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  .card {
+    width: 100%;
+    @media (min-width:$tablet ) {
+      max-width: 768px;
+    }
+  }
+}
+/* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+

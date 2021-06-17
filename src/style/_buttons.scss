@@ -1,0 +1,30 @@
+
+/* ↓↓↓↓↓↓↓ Add Task button ↓↓↓↓↓↓↓ */
+.addTask {
+  position: relative;
+  top: 0px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover h5::after { //when hover on addTask scale X for h5
+    transform: scaleX(1);
+  }
+  h5::after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px $dark;  
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+}
+/* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+.edit-task {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#close_add_task_btn:hover, #close_edit_task_btn:hover {
+  cursor: pointer;
+}
