@@ -6,9 +6,10 @@
   else 
       $page = 'toDoList';
 
+
   $inserted = include('./dist/views/' . $page . '.php');
   if(!$inserted)
-      echo "Requested page not found";
+      echo "Requested page not found aha";
 ?>
 
 <!DOCTYPE html>
